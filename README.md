@@ -4,7 +4,7 @@ A Bash automation script that clones, configures, and deploys a full-stack MERN 
 
 ## What This Project Demonstrates
 
-- Writing idempotent Bash scripts (safe to re-run without breaking existing state)
+- Writing Bash scripts whose setup steps (clone, dependency install, MongoDB install, `.env` creation) are safe to re-run
 - Automating a multi-service deployment: repository cloning, dependency installation, database setup, and process management
 - Configuring Nginx as a reverse proxy for two independent services (frontend + backend) under one domain
 - Using Nginx's `rewrite` directive to translate public-facing paths to internal API routes
