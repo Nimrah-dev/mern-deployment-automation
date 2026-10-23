@@ -16,6 +16,7 @@ display_usage() {
 
 if [ $# -ne 2 ]; then
 	display_usage
+	exit 1
 fi
 
 source_dir=$1
