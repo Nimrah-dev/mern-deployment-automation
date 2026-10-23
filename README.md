@@ -87,3 +87,18 @@ curl -I http://localhost              # → 301 redirect to https
 
 - `other-scripts/nginx.sh`: checks whether Nginx is running, restarts it if it is down, and logs each check with a timestamp.
 - `other-scripts/<backup-script-name>.sh`: creates a timestamped zip backup of a folder and keeps only the 5 most recent backups (rotation using Bash array slicing).
+
+## Screenshots
+
+**Full script run**
+![Script run](screenshots/bookstore-script.jpg)
+
+**Backend and frontend running**
+![Backend](screenshots/bookstore-script1.jpg)
+![Frontend](screenshots/bookstore-script2.jpg)
+
+**Nginx health-check: detects a stopped service, restarts it, logs it**
+![Nginx health check](screenshots/nginx-script.jpg)
+
+**Backup rotation keeping the latest 5**
+![Backup rotation](screenshots/backup-script.jpg)
