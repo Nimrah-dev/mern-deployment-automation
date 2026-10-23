@@ -91,14 +91,14 @@ curl -I http://localhost              # → 301 redirect to https
 ## Screenshots
 
 **Full script run**
-![Script run](screenshots/bookstore-script.jpg)
+![Script run](Screenshots/bookstore-script.jpg)
 
 **Backend and frontend running**
-![Backend](screenshots/bookstore-script1.jpg)
-![Frontend](screenshots/bookstore-script2.jpg)
+![Backend](Screenshots/bookstore-script1.jpg)
+![Frontend](Screenshots/bookstore-script2.jpg)
 
 **Nginx health-check: detects a stopped service, restarts it, logs it**
-![Nginx health check](screenshots/nginx-script.jpg)
+![Nginx health check](Screenshots/nginx-script.jpg)
 
 **Backup rotation keeping the latest 5**
-![Backup rotation](screenshots/backup-script.jpg)
+![Backup rotation](Screenshots/backup-script.jpg)
