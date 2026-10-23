@@ -82,3 +82,8 @@ curl -I http://localhost              # → 301 redirect to https
 - **Environment variable mismatch**: the README documented `MONGODB_URI`, but the actual code (`config.js`) read `process.env.mongoDBURL` — traced this by reading the source rather than trusting the docs.
 - **Nginx not picking up changes**: `sites-enabled` had a stale symlink pointing to an old config file from a previous project, so edits to `sites-available/default` were being silently ignored until the correct symlink was restored.
 - **Background processes blocking the script**: `npm run dev` runs indefinitely in the foreground, which would have stalled the script at the backend step — solved with `nohup ... &`.
+
+## Other Scripts
+
+- `other-scripts/nginx.sh`: checks whether Nginx is running, restarts it if it is down, and logs each check with a timestamp.
+- `other-scripts/<backup-script-name>.sh`: creates a timestamped zip backup of a folder and keeps only the 5 most recent backups (rotation using Bash array slicing).
